@@ -1,0 +1,10 @@
+[Unit]
+Description=kodiMcontrol server daemon
+
+[Service]
+ExecStart=/usr/bin/kodiMcontrolServer -c /etc/kodiMcontrol/kodiMcontrol.cfg
+IgnoreSIGPIPE=false
+
+[Install]
+WantedBy=multi-user.target
+
